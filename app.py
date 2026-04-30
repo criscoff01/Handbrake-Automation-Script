@@ -6,15 +6,15 @@ import logging
 
 
 # === CONFIG ===
-SOURCE_DIR = Path(r"C:\Handbrakes\Uncompressed") #The location of the file you want compressed 
-DEST_DIR = Path(r"C:\Handbrakes\Compressed") #Where you want the compressed file to be saved to
-HANDBRAKE_CLI = r"C:\Program Files\HandBrake\HandBrakeCLI.exe" #The location of the HandBrakeCLI.exe file on your system
-PRESET = "Very Fast 480p30" #The preset you want to use you can find the list of presets by running `HandBrakeCLI --preset-list` in your command prompt.
+SOURCE_DIR = Path(r"C:\Handbrakes\Uncompressed")
+DEST_DIR = Path(r"C:\Handbrakes\Compressed")
+HANDBRAKE_CLI = r"C:\Program Files\HandBrake\HandBrakeCLI.exe"
+PRESET = "Very Fast 480p30"
 
-MAX_CONCURRENT_JOBS = 1 #Set this number to the amount of concurrent jobs you want to run at once, be careful not to set this too high or you may run into performance issues. I recommend starting with 1 and increasing it if you have a powerful CPU and enough RAM.
-DELAY_BETWEEN_JOBS = 10 #Set this number to the amount of seconds you want to wait between starting each job, this can help prevent performance issues when running multiple jobs at once. I recommend starting with 10 seconds and adjusting as needed.
+MAX_CONCURRENT_JOBS = 1
+DELAY_BETWEEN_JOBS = 10
 
-VIDEO_EXTENSIONS = [".mp4", ".mkv", ".avi", ".mov"] #file extensions to look for when scanning the source directory, you can add or remove extensions as needed
+VIDEO_EXTENSIONS = [".mp4", ".mkv", ".avi", ".mov"]
 
 
 # === SETUP LOGGING ===
